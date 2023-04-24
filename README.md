@@ -53,40 +53,40 @@ Lors de la création du compte son solde est nul.
 
 | Méthode | URL | Description | Exemple de corps de requête valide |
 |---------|-----|-------------|------------------------------------|
-| GET | /clients | Récupère tous les clients |  |
-| GET | /clients/{id} | Récupère un client spécifique |  |
-| POST | /clients | Créer un nouveau client | [JSON](#creerclient) |
-| PUT | /clients/{id} | Met à jour un client existant | [JSON](#modifierclient) |
-| DELETE | /clients/{id} | Supprime un client existant |   |
-| GET | /clients/{id}/comptes | Récupère les comptes d'un client spécifique |   |
+| GET | /api/client/liste | Récupère tous les clients |  |
+| GET | /api/client/{id} | Récupère un client spécifique |  |
+| POST | /api/client/enregistrer | Créer un nouveau client | [JSON](#creerclient) |
+| PUT | /api/client//modifier/{id} | Met à jour un client existant | [JSON](#modifierclient) |
+| DELETE | /api/client/supprimer/{id} | Supprime un client existant |   |
+| GET | /api/client/{id}/comptes | Récupère les comptes d'un client spécifique |   |
 
 ### Opérations sur les comptes
 
 | Méthode | URL | Description | Exemple de corps de requête valide |
 |---------|-----|-------------|------------------------------------|
-| GET | /comptes | Récupère tous les comptes |   |
-| GET | /comptes/{numCompte} | Récupère un compte spécifique |   |
-| POST | /comptes | Crée un nouveau compte | [JSON](#creercompte) |
-| DELETE | /comptes/{numCompte} | Supprime un compte existant |   |
-| GET | /comptes/{numCpt}/proprietaire | Récupère le proprietaire du compte |    |
-| PUT | /comptes/retrait| Faire le retrait d'un montant sur un compte | [JSON](#retrait)  |
-| PUT | /comptes/depot | Faire le depot d'un montant sur un compte | [JSON](#depot) |
-| PUT | /comptes/virement | Faire le virement d'un compte(numCompteSource) source à un compte de destination (numCompteDest) avec un montant sur un compte |  [JSON](#virement)   |
-| GET | /comptes/{numCompte}/depots | Récupère les dépots effectués sur un compte |    |
-| GET | /comptes/{numCompte}/retrait | Récupère les retraits effectués sur un compte |    |
-| GET | /comptes/{numCompte}/virementsRecu | Récupère les virements reçus par un compte |    |
-| GET | /comptes/{numCompte}/virementsEnvoye | Récupère les virements envoyés par un compte |    |
+| GET | /api/comptes/liste | Récupère tous les comptes |   |
+| GET | /api/comptes/{numCompte} | Récupère un compte spécifique |   |
+| POST | /api/comptes/enregistrer | Crée un nouveau compte | [JSON](#creercompte) |
+| DELETE | /api/comptes/supprimer/{numCompte} | Supprime un compte existant |   |
+| GET | /api/comptes/{numCpt}/proprietaire | Récupère le proprietaire du compte |    |
+| PUT | /api/comptes/retrait| Faire le retrait d'un montant sur un compte | [JSON](#retrait)  |
+| PUT | /api/comptes/depot | Faire le depot d'un montant sur un compte | [JSON](#depot) |
+| PUT | /api/comptes/virement | Faire le virement d'un compte(numCompteSource) source à un compte de destination (numCompteDest) avec un montant sur un compte |  [JSON](#virement)   |
+| GET | /api//comptes/{numCompte}/depots | Récupère les dépots effectués sur un compte |    |
+| GET | /api/comptes/{numCompte}/retrait | Récupère les retraits effectués sur un compte |    |
+| GET | /api/comptes/{numCompte}/virementsRecu | Récupère les virements reçus par un compte |    |
+| GET | /api/comptes/{numCompte}/virementsEnvoye | Récupère les virements envoyés par un compte |    |
 
 ### Informations sur les opérations(dépot, retraits, virements)
 
 | Méthode | URL | Description | Exemple de corps de requête valide |
 |---------|-----|-------------|------------------------------------|
-| GET | /operations/depots | Récupère tous les dépots effectués |   |
-| GET | /operations/depots/{txnid} | Récupère un dépot effectué grâce à son identifiant de transaction|   |
-| GET | /operations/retraits |  Récupère tous les retraits effectués ||
-| GET | /operations/retraits/{txnid} | Récupère un retrait effectué grâce à son identifiant de transaction|   |
-| GET | /operations/retraits |Récupère tous les virements effectués ||
-| GET | /operations/virements/{txnid} | Récupère un virement effectué grâce à son identifiant de transaction|   |
+| GET | /api/operations/depots | Récupère tous les dépots effectués |   |
+| GET | /api/operations/depots/{txnid} | Récupère un dépot effectué grâce à son identifiant de transaction|   |
+| GET | /api/operations/retraits |  Récupère tous les retraits effectués ||
+| GET | /api/operations/retraits/{txnid} | Récupère un retrait effectué grâce à son identifiant de transaction|   |
+| GET | /api/operations/retraits |Récupère tous les virements effectués ||
+| GET | /api/operations/virements/{txnid} | Récupère un virement effectué grâce à son identifiant de transaction|   |
 
 
 ## Exemples de corps de requêtes JSON valides
