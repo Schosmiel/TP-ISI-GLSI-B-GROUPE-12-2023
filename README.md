@@ -16,11 +16,16 @@ Le numéro de compte est unique pour un compte.
 Lors de la création du compte son solde est nul. 
 
 ### Objectifs:
+
 1.	Mettre en place une API CRUD pour gérer les comptes et les clients.
-2.	Ajouter les possibilités pour le client de : 
+
+2.	Ajouter les possibilités pour le client de ;
+
 3-	Faire un versement sur son compte ;
+
 5-	Faire un retrait sur son compte si le solde le permet ;
-6-	Faire un virement d’un compte à un autre
+
+6-	Faire un virement d’un compte à un autre.
 
 
 ## Modèle
