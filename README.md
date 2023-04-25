@@ -17,7 +17,7 @@ Lors de la création du compte son solde est nul.
 
 ### Objectifs:
 
-1.	Mettre en place une API CRUD pour gérer les comptes et les clients.
+1.	Mettre en place une API CRUD pour gérer les comptes et les clients;
 
 2.	Ajouter les possibilités pour le client de ;
 
