@@ -47,6 +47,12 @@ Lors de la création du compte son solde est nul.
 | dateCreation | String | Date de création générer automatiquement avec la date du jour |
 | proprietaire | Client | Client proprietaire du compte |
 
+
+### Système de gestion de BD utilisé : Postgres
+
+### Créer une base de données en postgres: create database springapi
+
+
 ## Endpoints
 
 ### Opérations sur les clients
